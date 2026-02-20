@@ -23,7 +23,11 @@ app = FastAPI(
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://your-frontend-domain.com"],  # Add your frontend URL
+    allow_origins=[
+        "http://localhost:5173", 
+        "http://localhost:3000", 
+        "https://hrms-lite-git-main-lalit-kumar-bhatiwals-projects.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
